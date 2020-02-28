@@ -201,3 +201,19 @@ input[type=text]
     background:#4b8cfb;
     font-size: 20px;
 }
+.inp-btn:hover
+{
+    background:#000;
+    transition:0.3s;
+}
+.copyright
+{
+    background:gray;
+    font-size:20px;
+    height:50px;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    cursor:default; 
+
+}
