@@ -168,3 +168,12 @@ input
     background: #50555b;
     color:#fff; 
 }
+textarea
+{
+    border:0;
+    border-radius: 10px;
+    height:100px;
+    width:500px;
+    background:#50555b;
+    color:#fff;
+}
