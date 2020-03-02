@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
     <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
@@ -8,6 +12,14 @@
     <title>Gumato Web</title>
 </head>
 <body>
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
     <div class="container">
         <div class="header">
             <div class="navbar">
@@ -67,4 +79,23 @@
 
     </div>
 </body>
+<script type="text/javascript">
+   $(document).ready(function(){
+       $(".toggle").click(function(){
+        $(".navbar").slideToggle()
+   });
+   $(window).resize(function(){
+       if($(window).width()>768)
+       {
+           $('.navbar').show();
+       }
+       else
+       {
+           $('.navbar').hide();
+       }
+   });
+       });
+     
+</script>
+
 </html>

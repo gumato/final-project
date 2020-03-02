@@ -217,3 +217,43 @@ input[type=text]
     cursor:default; 
 
 }
+.toggle
+{
+    width:30px;
+    padding: 10px;
+    float:right;
+    background:grey;
+    border-radius: 10px;
+    margin:6px;
+    cursor:pointer;
+    display:none;
+}
+.toggle span
+{
+   widows: 100%;
+   height:4px;
+   background-color:#fff;
+   display:block;
+   margin-bottom:3px;
+
+}
+@media(max-width:768px)
+{
+    .toggle
+    {
+      display:block;
+      position:fixed;
+
+    }
+    .navbar
+    {
+       display:none;
+
+    }
+    .navbar a
+    {
+      display:block; 
+      text-align: center; 
+      padding:10px;
+    }
+}
